@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 44);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(34, 9, 92);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main hr {
+            border: 0;
+            background: #9182f5;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        thirdsection hr {
+            border: 0;
+            background: #9182f5;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        fourthsection hr {
+            border: 0;
+            background: #9182f5;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        fifthsection hr {
+            border: 0;
+            background: #9182f5;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        sixthsection hr {
+            border: 0;
+            background: #9182f5;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        nav ul li a:hover {
+            color: rgba(166, 132, 132, 0.779);
+            font-size: 1.043rem;
+        }
+
+        .left {
+            font-size: 1.3rem;
+        }
+
+        .fourthsection {
+            padding-left: 150px;
+            padding-right: 120px;
+        }
+
+        .fifthsection {
+            padding-left: 150px;
+            padding-right: 120px;
+        }
+
+        .sixthsection {
+            padding-left: 150px;
+            padding-right: 120px;
+        }
+        .seventhsection {
+            padding-left: 150px;
+            padding-right: 120px;
+        }
+        .contact-left{
+            flex-basis: 35%;
+        }
+        .contact-left p{
+            margin-top: 20px;
+        }
+        .contact-left p i{
+            color: rgb(141, 136, 136);
+            margin-right: 15px;
+            font-size: 25px;
+        }
+        .social-icons{
+            margin-top: 20px;
+        }
+        .social-icons a{
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: rgba(171, 156, 228, 0.733);
+            display: inline-block;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            /* padding-left: 500px;*/
+            text-align: center;
+        }
+
+        .thirdsection {
+            padding-left: 150px;
+            padding-right: 120px;
+        }
+
+        .firstsection>div {}
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #180f51;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .footer img {
+            width: 10%;
+
+        }
+
+        .purple {
+            color: rgb(160, 89, 226);
+        }
+
+        #element {
+            color: rgb(160, 89, 226);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            padding-bottom: 50px;
+            color: rgb(145 145 232);
+        }
+
+        .thirdsection h1 {
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color: rgb(145 145 232);
+        }
+
+        .fourthsection h1 {
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color: rgb(145 145 232);
+        }
+
+        .fifthsection h1 {
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color: rgb(145 145 232);
+        }
+
+        .sixthsection h1 {
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color: rgb(145 145 232);
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color: rgb(145 145 232);
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .image-top {
+            position: relative;
+            width: 50px;
+            top: -50px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 200px;
+            left: -60px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 10px;
+            left: -60px;
+        }
+
+        .cont {
+            padding-top: 100px;
+        }
+
+        .thirdsection .desc {
+            color: gray;
+            font-size: small;
+        }
+
+        .fourthsection .desc {
+            color: gray;
+            font-size: small;
+        }
+
+        .fifthsection .desc {
+            color: gray;
+            font-size: small;
+        }
+
+        .time {
+            position: relative;
+            width: 200px;
+            left: -60px;
+            top: 80px;
+            padding-bottom: 7px;
+        }
+
+        footer {
+            background-color: #7258724a;
+
+        }
+
+        .footer {
+
+            margin: 23px 122px;
+            justify-content: space-around;
+        }
+
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            .firstsection .leftsection {
+                text-align: center;
+            }
+
+            .firstsection .rightsection {
+                text-align: center;
+                font-size: 1.7rem;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondsection .box {
+                width: 45vw;
+            }
+
+            .image-top {
+                top: 115px;
+            }
+
+            .time {
+                padding-left: 110px;
+            }
+
+            nav {
+                flex-direction: column;
+                font-size: 0.6rem;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+
+            }
+
+            .secondsection .vertical {
+                height: unset;
+                margin-left: -4px;
+
+            }
+
+            .secondsection {
+                max-width: 80vw;
+                margin: auto;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/68e31f1773.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" id="home">Asma's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Expertise</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="about">
+            <div class="leftsection">
+                Hii, I am <div class="purple">Shaik Asma</div>
+                <div>And I am a passionate
+                    <div><span id="element"></span></div>
+                </div>
+                <div class="buttons">
+                    <button class="btn">
+                        <a href="resume.pdf">View Resume</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://github.com/209x1a04d2"> Visit github </a>
+                    </button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1 id="experience">Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Web developer
+                    </div>
+                    <div class="time">(July 2023 - Aug 2023)</div>
+                    <div class="vertical-desc">
+                        I am working as a Web developer in Oasis Infobyte during which I'm working on Html, Css and
+                        Javascript projects. I made a landing page and portfolio website.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Matlab_Logo.png" alt="">
+                    <div class="vertical-title">
+                        Mathworks Intern
+                    </div>
+                    <div class="time">(June 2023 - Sep 2023)</div>
+                    <div class="vertical-desc">
+                        I am working at Mathworks as a Intern where I am working on Matlab onramp, Image processing and
+                        Digital signal processig technologies.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="machinelearning.png" alt="">
+                    <div class="vertical-title">
+                        Machine Learning using Python Intern
+                    </div>
+                    <div class="time">(Feb 2023 - Mar 2023)</div>
+                    <div class="vertical-desc">
+                        I have worked as a Machine learning using Python Intern at YBI Foundation, where I have worked
+                        on Machine learning algorithms and projects using Python.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ai - ml.png" alt="">
+                    <div class="vertical-title">
+                        AI-ML Intern
+                    </div>
+                    <div class="time">(Mar 2022 - May 2022)</div>
+                    <div class="vertical-desc">
+                        I have worked as an AI - ML Intern at AICTE(All India Council for Technical Education) during
+                        which I learnt about Artificial Intelligence and Machine Learning technologies.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <h1>Education</h1>
+            <div class="btech">
+
+                <h3>Bachelors of Technology(Btech) | Sep 2020 - May 2024</h3>
+                <div class="desc">
+                    G Pulla Reddy Engineering College(Autonomous), Kurnool ||
+                    Minor degree in Internet of Things (IoT) ||
+                    Along with the regular degree of Btech, I managed to do a Minor degree in IoT
+                    which gave me a good knowledge of Sensors, Actuators,LAN etc. ||
+                    CGPA : 9.25(till 6th Semester)</div>
+
+            </div>
+            <div class="inter">
+                <h3>Intermediate | Jun 2018 - Mar 2020</h3>
+                <div class="desc">
+                    Narayana JR College, Kurnool ||
+                    JEE MAINS PERCENTILE: 90.14 ||
+                    AP EAMCET RANK: 2806 ||
+                    CGPA : 10.0 ||
+                    MARKS : 979 / 1000</div>
+
+            </div>
+            <div class="tenth">
+                <h3>Secondary School of Education(SSC) | Jun 2017 - Mar 2018</h3>
+                <div class="desc">
+                    Sri Chaitanya High School, Kurnool ||
+                    CGPA : 10.0</div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="fourthsection">
+            <h1 id="certifications">Certifications</h1>
+            <div class="title">Matlab onramp | Mathworks (Jun 2023)</div>
+            <div class="desc">
+                I am certified by Mathworks on Matlab onramp technology.</div>
+            <div class="title">Java | Coding Ninjas (Dec 2023)</div>
+            <div class="desc">
+                I am a certified Java Programmer by Coding Ninjas.</div>
+            <div class="title">Azure AI fundamentals | Microsoft (Oct 2022)
+            </div>
+            <div class="desc">
+                Certified by Microsoft on Azure AI fundamentals.
+            </div>
+            <div class="title">Python | Coding Ninjas (May 2022)</div>
+            <div class="desc">
+                Certified Python programmer.</div>
+            <div class="title">Internet of Things(IoT) | Yonsei University (May 2022)</div>
+            <div class="desc">
+                I completed this certification from Yonsei University through Coursera.
+                During which I gained knowledge on IoT,Wireless & Cloud computing
+                Emerging technologies.</div>
+            <div class="title">Programming in Java | NPTEL (IIT) (Oct 2022)
+            </div>
+            <div class="desc">
+                Certified by Nptel(IIT Kharagpur) for Java Programming, Elite with
+                Silver certificate.</div>
+        </section>
+        <hr>
+        <section class="fifthsection">
+            <h1>Extra-curricular Activities</h1>
+            <div class="title">Class Representative || Sep 2020 - Aug 2021</div>
+            <div class="desc">I have represented my class due to my high score in AP Eamcet.</div>
+            <div class="title">Coding Club Member || Sep 2022 - Apr 2023</div>
+            <div class="desc">I have participated in many coding competitions conducted by our club</div>
+            <div class="title">Vivekananda Study Circle member || Sep 2022 - Apr 2023</div>
+        </section>
+        <hr>
+        <section class="sixthsection">
+            <h1>Achievements</h1>
+            <ul>
+                <li>National Science Olympiad (NSO) gold medalist.</li>
+                <li>Won 2nd prize in Circuit Mastery in Technoledgica, a state level technical
+                    symposium.</li>
+                <li>Won 3rd prize in Coding competition in Technoledgica.</li>
+                <li>Won 2nd prize in National Science Day event for best project.</li>
+                <li>Participated in Poster presentation conducted by IEEE society.</li>
+            </ul>
+        </section>
+        <hr>
+        <section class="seventhsection">
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="subtitle">Contact me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>shaikasma@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>+91 9030235081</p>
+                            <div class="social-icons">
+                                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/shaik-asma-031977232/"><i class="fa-brands fa-linkedin"></i></i></a>
+                                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <div class="footer-rights">
+                Copyrights  asmaportfolio.com || All rights are reserved.
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Programmer', 'ECE engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
